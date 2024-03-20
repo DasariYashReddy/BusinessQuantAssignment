@@ -1,0 +1,11 @@
+GET http://localhost:3000/ticker=AAPL
+
+GET http://localhost:3000/ticker=AAPL&column=revenue,gp
+
+GET http://localhost:3000/ticker=AAPL&column=revenue,gp&period=5y
+
+
+FOR LOAD TIME
+http://localhost:3000/ticker=AAPL&column=revenue,gp&period=5y
+
+http://localhost:3000/ticker=ZS&column=revenue,gp&period=5y
